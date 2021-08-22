@@ -5,11 +5,12 @@
 
   <div class="form-group">
     <label>Nome</label>
-    <input type="text" class="form-control" #nomeInput>
+    <input type="text" class="form-control" #nomeInput (input)="alterar($event)" value={{nome}} >
   </div>
   <!--
     Template reference verbos
   -->
-  <button type="button" class="btn btn-primary h-space" (click)="alterarNome(nomeInput.value)">
-    Incluir Funcionário</button>
+  <button type="button" class="btn btn-primary h-space" (click)="alterarNome(nomeInput.value)"
+    bind-disabled="nome.length == 0">
+    Adicionar</button>
 </div>

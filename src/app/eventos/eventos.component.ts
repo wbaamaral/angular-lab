@@ -13,7 +13,11 @@ export class EventosComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  alterarNome( parametro: string){
-     this.nome = parametro;
+  alterar(parametro: any) {
+    this.nome = parametro.target.value;
+  }
+
+  alterarNome(parametro: string) {
+    this.nome = parametro;
   }
 }
