@@ -3,11 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
+import { InterpolacaoComponent } from './interpolacao/interpolacao.component';
+import { EventosComponent } from './eventos/eventos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HelloComponent
+    HelloComponent,
+    InterpolacaoComponent,
+    EventosComponent
   ],
   imports: [
     BrowserModule
