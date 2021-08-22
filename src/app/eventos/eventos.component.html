@@ -5,13 +5,13 @@
 
   <div class="form-group">
     <label>Nome</label>
-    <input type="text" class="form-control" (input)="alterarNome($event)"
-    value="{{nome}}">
+    <input type="text" class="form-control" #nomeInput>
   </div>
   <!--
     sitaxe sugar...
     coloque parenteses = expressao type script
     sem interpolação
   -->
-  <button type="button" class="btn btn-primary h-space" (click)="adicionar()">Incluir Funcionário</button>
+  <button type="button" class="btn btn-primary h-space" (click)="alterarNome(nomeInput.value)">
+    Incluir Funcionário</button>
 </div>
