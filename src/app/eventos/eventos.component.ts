@@ -1,23 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-eventos',
   templateUrl: './eventos.component.html',
   styleUrls: ['./eventos.component.css']
 })
-export class EventosComponent implements OnInit {
+export class EventosComponent {
   nome = 'Amaral';
 
-  constructor() { }
+  adicionar() {
+    console.log(`Adicionando ${this.nome}`);
 
-  ngOnInit(): void {
-  }
-
-  alterar(parametro: any) {
-    this.nome = parametro.target.value;
-  }
-
-  alterarNome(parametro: string) {
-    this.nome = parametro;
+    const numero = Math.round(Math.random() * 100);
+    this.nome = 'João ' + numero;
   }
 }

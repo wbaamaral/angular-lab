@@ -1,16 +1,15 @@
 <div class="container">
   <div class="alert alert-success" role="alert">
-    Funcionário <strong>{{nome}}</strong>, adicionado.
+    Adicionado funcionário: <strong>{{nome}}</strong>.
   </div>
 
   <div class="form-group">
     <label>Nome</label>
-    <input type="text" class="form-control" #nomeInput (input)="alterar($event)" [value]="nome" >
+    <input type="text" class="form-control" [(ngModel)]="nome">
   </div>
   <!--
     Template reference verbos
   -->
-  <button type="button" class="btn btn-primary h-space" (click)="alterarNome(nomeInput.value)"
-    [disabled]="nome.length == 0">
+  <button type="button" class="btn btn-primary h-space" (click)="adicionar()" [disabled]="nome.length == 0">
     Adicionar</button>
 </div>
