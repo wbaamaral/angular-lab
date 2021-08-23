@@ -7,22 +7,9 @@ import { Component, OnInit, NgModule } from '@angular/core';
 })
 export class EventosComponent {
 
-  ultimoId = 0;
-  nome = 'Amaral';
+  funcionario = [];
 
+  aoAdicionar() {
 
-  // funcionarios = [] as any;
-  funcionarios: Array<any> = [];
-
-  adicionado = false;
-
-  adicionar() {
-    console.log(`Adicionando ${this.nome}`);
-    this.adicionado = true;
-
-    this.funcionarios.push({
-      id: ++this.ultimoId,
-      nome: this.nome
-    });
   }
 }
