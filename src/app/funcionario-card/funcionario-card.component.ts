@@ -7,7 +7,6 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class FuncionarioCardComponent  {
 
-  @Input() funcionario : any;
-
+  @Input() funcionario : any ;
 
 }

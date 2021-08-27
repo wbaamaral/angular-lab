@@ -7,9 +7,9 @@ import { Component, OnInit, NgModule } from '@angular/core';
 })
 export class EventosComponent {
 
-  funcionario = [];
+  funcionarios: any[] = [];
 
-  aoAdicionar() {
-
+  aoAdicionar(funcionario :  any){
+    this.funcionarios.push(funcionario);
   }
 }
