@@ -8,6 +8,7 @@ import { InterpolacaoComponent } from './interpolacao/interpolacao.component';
 import { EventosComponent } from './eventos/eventos.component';
 import { FuncionarioCardComponent } from './funcionario-card/funcionario-card.component';
 import { FuncionarioFormComponent } from './funcionario-form/funcionario-form.component';
+import { PipeComponent } from './pipe/pipe.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FuncionarioFormComponent } from './funcionario-form/funcionario-form.co
     InterpolacaoComponent,
     EventosComponent,
     FuncionarioCardComponent,
-    FuncionarioFormComponent
+    FuncionarioFormComponent,
+    PipeComponent
   ],
   imports: [
     BrowserModule,
